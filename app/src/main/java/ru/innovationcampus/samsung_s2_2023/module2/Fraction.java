@@ -1,6 +1,6 @@
 package ru.innovationcampus.samsung_s2_2023.module2;
 
-public class Fraction {
+public class Fraction extends Object{
     private int numerator;
     private int denominator;
 
@@ -15,11 +15,7 @@ public class Fraction {
             denominator *= -1;
         }
         this.numerator = numerator;
-        if (denominator != 0) {
-            this.denominator = denominator;
-        } else {
-            System.out.println("Знаменатель неправильный");
-        }
+        this.setDenominator(denominator);
         this.normal();
     }
 
@@ -66,5 +62,17 @@ public class Fraction {
 
     public String toString() {
         return this.numerator + " / " + this.denominator;
+    }
+
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+       if (denominator != 0) {
+            this.denominator = denominator;
+        } else {
+            System.out.println("Знаменатель неправильный");
+        }
     }
 }

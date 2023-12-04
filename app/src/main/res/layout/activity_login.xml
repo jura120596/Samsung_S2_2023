@@ -23,14 +23,16 @@
         android:layout_width="match_parent"></TextView>
 
     <EditText
-        android:hint="@string/pwd_hint"
+        android:id="@+id/pwdET"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"></EditText>
+        android:hint="@string/pwd_hint"></EditText>
 
     <Button
-        android:background="@color/black"
-        android:text="@string/login_btn_text"
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"></Button>
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:text="@string/login_btn_text"></Button>
 
 </LinearLayout>
