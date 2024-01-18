@@ -1,6 +1,6 @@
 package ru.innovationcampus.samsung_s2_2023.module2;
 
-public class Robot extends Unit{
+public class Robot extends Unit implements Printable{
     protected int armor;
 
 
